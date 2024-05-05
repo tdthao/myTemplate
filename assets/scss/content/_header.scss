@@ -1,0 +1,205 @@
+// topbar
+.header {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    
+    &.stick {
+        background-color: $light;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0 2px 10px #ccc;
+        z-index: 99999;
+        will-change: transform;
+        transform: translateZ(0px);
+    }
+    .header__top-bar {
+        background-color: $dark;
+        .language-select {
+            &__img-flag {
+                margin-right: 1rem;
+            }
+            &-items {
+                // display: block;
+                width: 9rem;
+                background-color: #333;
+                position: absolute;
+                top: 100%;
+                display: none;
+                z-index: 2;
+
+                &>li{
+                    width: 100%;
+                    // height: 3.6rem;
+                    padding: 1rem 2.5rem;
+                    a:hover, a:link, a:visited {
+                        text-decoration: none;
+                        
+                    }
+                    &:hover {
+                        background-color: $primary;
+                        
+                        a {color: $light;}
+                    }
+                }
+            }
+            &:after {
+                content: "";
+                display: block;
+                // background-color: rgb(202, 50, 50);
+                width: 90px;
+                height: 30px;
+                position: absolute;
+                
+            }
+            &:hover .language-select-items {
+                display: block;
+            }
+        }
+        .useful-links {
+            margin-bottom: 0;
+            .link-item {
+                padding-right: 4.5rem;
+                &:hover, &:visited, &:link {
+                    text-decoration: none;
+
+                }
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+        .btn-be-a-volunteer {
+            padding: 1.4rem 2.4rem;
+            background-color: $primary;
+            font-size: 1rem;
+            letter-spacing: 0.08rem;
+        }
+    }
+    .header__bottom-bar {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: $light;
+        
+        
+        .list-links {
+            
+            line-height: 6rem;
+            &>ul {
+                margin-bottom: 0;
+                &>li {
+                    margin-left: 5.5rem;
+                    position: relative;
+                    &>a {
+                        color: #474747;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        transition: all 0.4s linear 0s;
+
+                        &:hover {
+                            color: $primary;
+                            
+                        }
+                        &:hover, &:link {
+                            text-decoration: none;
+                        }
+                    }
+                    &::after {
+                        content: "";
+                        display:block;
+                        width: 6.6rem;
+                        height: 6rem;
+                        // background-color: red;
+                        z-index: 33;
+                        position: absolute;
+                        top: 100%;
+
+                    }
+
+                    &>ul.mega-menu.haft.three {
+                        & > li{
+                        width: calc(100% / 3);
+
+                    }}
+                    &>ul.mega-menu.haft.two {
+                        width: 20rem;
+                        left: -8rem;
+                        & > li{
+                            width: 100%;
+                            // width: calc(100% / 2);
+                        }
+                    } 
+                    
+                    &>ul {
+                        position:absolute;
+                        left: -37rem;
+                        top: 132%;
+                        // background-color: #c6a1a1;
+                        z-index: 888;
+                        width: 78rem;
+                        flex-wrap: wrap;
+                        border-top: 2px solid $primary;
+                        display: none;
+                        border-bottom: 1px solid #eae9e9;
+                        &>li {
+                            background-color: $light;
+                            // border: 1px solid #eae9e9;
+                            line-height: 4;
+                            &>a {
+                                padding: 16px 20px;
+                                color: #474747;
+                                font-size: 1.2rem;
+                                flex-wrap: no-wrap;
+                                    &:hover {
+                                        color: $light;
+                                        
+                                    }
+                                    &:hover, &:link, &:visited {
+                                        text-decoration: none;
+                                    }
+                                
+                            }
+                            &:hover {
+                                background-color: $primary;
+                                & a {
+                                    color: $light;
+                                }
+                            }
+                            &:hover, &:link, &:visited {
+                                text-decoration: none;
+                            }
+                        }
+                        
+                    }
+                    &:hover {
+                        
+                        ul {
+                            display: flex;
+                            animation-name: appearObj;
+                            animation-duration: 0.8s;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+.no_border_bottom {
+    border-bottom: 0px;
+}
+
+@keyframes appearObj {
+    from {
+        transform: scaleX(0);
+        opacity: 0.6;
+    }
+    to {
+        
+        transform: scale(1);
+        opacity: 1;
+        
+    }
+}

@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone LifeAid Charity</title>
+
+    <!-- ==============embed libs========== -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    /> -->
+    <link rel="stylesheet" href="./assets/inc/ionicons/css/ionicons.min.css" />
+    <link rel="stylesheet" href="./assets/inc/ripple/ripple.css" />
+
+    <link rel="stylesheet" href="./assets/inc/slick/slick.css" />
+
+    <!-- ==============embed libs========== -->
+    <link
+      rel="stylesheet"
+      href="./assets/inc/slick/slick_custom/slick_custom.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./assets/inc/owlcarousel/css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/inc/owlcarousel/css/owl.theme.default.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/inc/owlcarousel/custom_owlcarousel/custom_owlcarosel.css"
+    />
+
+    <link rel="stylesheet" href="./assets/inc/animate/animate.css">
+
+    <link rel="stylesheet" href="./assets/scss/css/main.css" />
+  </head>
+  <body>
+    <header class="header text-white">
+        <nav class="header__top-bar">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-sm-12 d-flex align-items-center justify-content-between"
+              >
+                <div class="d-flex">
+                  <div class="language-select">
+                    <span>
+                      <img
+                        src="./assets/images/flag-1.png"
+                        alt=""
+                        class="language-select__img-flag"
+                      />
+                      English
+                      <i
+                        class="language-select__arrow-down-icon ion-ios-arrow-down"
+                      ></i>
+                    </span>
+                    <ul class="language-select-items">
+                      <li class="custom_ripple"><a href="#">hindi</a></li>
+                      <li class="custom_ripple"><a href="#">USSR</a></li>
+                      <li class="custom_ripple"><a href="#">ARABIC</a></li>
+                    </ul>
+                  </div>
+                  <ul class="useful-links d-flex pl-5">
+                    <li><a href="#" class="link-item">my account</a></li>
+                    <li><a href="#" class="link-item">our story</a></li>
+                    <li><a href="#" class="link-item">what we do</a></li>
+                  </ul>
+                </div>
+                <div class="">
+                  <a
+                    href="#"
+                    class="btn btn-be-a-volunteer text-white custom_ripple"
+                    >Be a volunteer</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <nav class="header__bottom-bar">
+          <div class="container">
+            <div class="row d-flex justify-content-between align-items-center">
+              <div class="logo d-flex col-sm-2">
+                <a href="index.html">
+                  <img src="./assets/images/logo.png" alt="" class="logo-img" />
+
+                </a>
+              </div>
+              <div
+                class="list-links d-flex justify-content-end align-items-center col-sm-10"
+              >
+                <ul class="d-flex">
+                  <li>
+                    <a href="#">home</a>
+                    <ul class="mega-menu haft three">
+                      <li>
+                        <a href="#">home 1</a>
+                      </li>
+                      <li>
+                        <a href="#">home 2</a>
+                      </li>
+                      <li>
+                        <a href="#">home 3</a>
+                      </li>
+                      <li>
+                        <a href="#">home 4</a>
+                      </li>
+                      <li>
+                        <a href="#">home 5</a>
+                      </li>
+                      <li>
+                        <a href="#">home 6</a>
+                      </li>
+                      <li>
+                        <a href="#">home featured banner</a>
+                      </li>
+                      <li>
+                        <a href="#">home featured carousel</a>
+                      </li>
+                      <li>
+                        <a href="#">home with sidebar</a>
+                      </li>
+                      <li>
+                        <a href="#">home featured text carousel</a>
+                      </li>
+                      <li>
+                        <a href="#">home featured video</a>
+                      </li>
+                      <li class="no_border_bottom">
+                        <a href="#">home boxed</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">pages</a>
+                  </li>
+                  <li>
+                    <a href="#">shortcodes</a>
+                  </li>
+                  <li>
+                    <a href="#">detail pages</a>
+                  </li>
+                  <li>
+                    <a href="#">blog</a>
+                    <ul class="mega-menu haft two">
+                      <li>
+                        <a href="blogleftsidebar.html">blog with l.sidebar</a>
+                      </li>
+                      <li>
+                        <a href="blogrightsidebar.html">blog with r.sidebar</a>
+                      </li>
+                    </ul>
+                    
+                  </li>
+                  <li>
+                    <a href="#">contact us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+        <section class="banner-page">
+            <div class="gap no-padding-bottom backish low-opacity">
+                <div class="bg-image">
+                    <img src="./assets/images/resources/pagetop.jpg" alt="">
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="page-top">
+                                <ul class="bread-crumb">
+                                  <li><a href="#" title="">home</a>
+                                  </li>
+                                  <li>Listing</li>
+                              </ul>
+                                <h2 class="page-title">Blog <span>List style</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-page ">
+          <div class="gap">
+            <div class="container">
+              <div class="row ">
+                <div class="col-sm-12 col-md-3">
+                  <aside>
+                    <div class="widget">
+                      <div class="search">
+                        <form>
+                            <input type="text" placeholder="search...">
+                            <button><i class="ion-search"></i></button>
+                        </form>
+                    </div>
+                    </div>
+                    <div class="widget">
+                      <h4 class="widget-title">charity video</h4>
+                      <div class="video-widget">
+                        <img src="./assets/images/resources/video-donate.jpg" alt="">
+                        <a href="https://player.vimeo.com/video/1084537" class="">
+                          <i class="ion-android-arrow-dropright-circle"></i>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="widget">
+                      <h4 class="widget-title">gallery widget</h4>
+                      <ul class="gallery clearfix">
+                        <li>
+                            <a href="./assets/images/resources/gallery-full-1.jpg"><img src="./assets/images/resources/wid-gallery-1.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="./assets/images/resources/gallery-full-2.jpg"><img src="./assets/images/resources/wid-gallery-2.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="./assets/images/resources/gallery-full-3.jpg"><img src="./assets/images/resources/wid-gallery-3.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="./assets/images/resources/gallery-full-4.jpg"><img src="./assets/images/resources/wid-gallery-4.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="./assets/images/resources/gallery-full-5.jpg"><img src="./assets/images/resources/wid-gallery-5.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="./assets/images/resources/gallery-full-6.jpg"><img src="./assets/images/resources/wid-gallery-6.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="./assets/images/resources/gallery-full-7.jpg"><img src="./assets/images/resources/wid-gallery-7.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="./assets/images/resources/gallery-full-8.jpg"><img src="./assets/images/resources/wid-gallery-8.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="./assets/images/resources/gallery-full-9.jpg"><img src="./assets/images/resources/wid-gallery-9.jpg" alt=""></a>
+                        </li>
+                        
+                    </ul>
+                    </div>
+                    <div class="widget">
+                      <h4 class="widget-title">category</h4>
+                      <ul class="category clearfix">
+                        <li><a href="#" title="">Charity & Fund Raising</a><span>23</span></li>
+                        <li><a href="#" title="">Hungery Children</a><span>45</span></li>
+                        <li><a href="#" title="">Donation For Food</a><span>567</span></li>
+                        <li><a href="#" title="">UpComing Events & Causes</a><span>10</span></li>
+                        <li><a href="#" title="">Children Education</a><span>08</span></li>
+                    </ul>
+                    </div>
+                    <div class="widget">
+                      <h4 class="widget-title">latest posts</h4>
+                      <ul class="latest-posts">
+                        <li>
+                            <div class="latest-avatar">
+                                <a href="#" title="">
+                                    <img src="./assets/images/resources/latest-post-1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="latest-meta">
+                                <h2><a href="#" title="">Food For Africa Chilren</a></h2>
+                                <span class="postdate">13 January, 2019</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="latest-avatar">
+                                <a href="single-blog.html" title="">
+                                    <img src="./assets/images/resources/latest-post-2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="latest-meta">
+                                <h2><a href="single-blog.html" title="">Food For Africa Chilren</a></h2>
+                                <span class="postdate">13 January, 2019</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="latest-avatar">
+                                <a href="single-blog.html" title="">
+                                    <img src="./assets/images/resources/latest-post-3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="latest-meta">
+                                <h2><a href="single-blog.html" title="">Food For Africa Chilren</a></h2>
+                                <span class="postdate">13 January, 2019</span>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="widget">
+                      <h4 class="widget-title">tags cloud</h4>
+                      <ul class="tags-cloud">
+                        <li><a href="#" title="" data-ripple="">Charity</a></li>
+                        <li><a href="#" title="" data-ripple="">Fund Raising</a></li>
+                        <li><a href="#" title="" data-ripple="">Food</a></li>
+                        <li><a href="#" title="" data-ripple="">Hungry Children</a></li>
+                        <li><a href="#" title="" data-ripple="">Events</a></li>
+                    </ul>
+                    </div>
+                    <div class="widget">
+                      <h4 class="widget-title">twitter feeds</h4>
+                      <ul class="twitter-feed owl-carousel owl-theme">
+                               
+                                <div class="twitter-post">
+                                    <i class="ion ion-social-twitter"></i>
+                                    <p>
+                                        <a href="#" title="">@Dewwatertheme</a>
+                                        We are the most proud on the #health care NGO, who is working day and night for saving the childes of #africa
+                                        #Dewwater <a href="#" title="">Dewwater.com/healthcare</a> 
+                                    </p>
+                                </div>
+                                <div class="twitter-post">
+                                    <i class="ion ion-social-twitter"></i>
+                                    <p>
+                                        <a href="#" title="">@Dewwatertheme</a>
+                                        We are the most proud on the #health care NGO, who is working day and night for saving the childes of #africa
+                                        #Dewwater <a href="#" title="">Dewwater.com/healthcare</a> 
+                                    </p>
+                                </div>
+                                <div class="twitter-post">
+                                    <i class="ion ion-social-twitter"></i>
+                                    <p>
+                                        <a href="#" title="">@Dewwatertheme</a>
+                                        We are the most proud on the #health care NGO, who is working day and night for saving the childes of #africa
+                                        #Dewwater <a href="#" title="">Dewwater.com/healthcare</a> 
+                                    </p>
+                                </div>
+                                <div class="twitter-post">
+                                    <i class="ion ion-social-twitter"></i>
+                                    <p>
+                                        <a href="#" title="">@Dewwatertheme</a>
+                                        We are the most proud on the #health care NGO, who is working day and night for saving the childes of #africa
+                                        #Dewwater <a href="#" title="">Dewwater.com/healthcare</a> 
+                                    </p>
+                                </div>
+                                <div class="twitter-post">
+                                    <i class="ion ion-social-twitter"></i>
+                                    <p>
+                                        <a href="#" title="">@Dewwatertheme</a>
+                                        We are the most proud on the #health care NGO, who is working day and night for saving the childes of #africa
+                                        #Dewwater <a href="#" title="">Dewwater.com/healthcare</a> 
+                                    </p>
+                                </div>
+                                <div class="twitter-post">
+                                    <i class="ion ion-social-twitter"></i>
+                                    <p>
+                                        <a href="#" title="">@Dewwatertheme</a>
+                                        We are the most proud on the #health care NGO, who is working day and night for saving the childes of #africa
+                                        #Dewwater <a href="#" title="">Dewwater.com/healthcare</a> 
+                                    </p>
+                                </div>
+                                <div class="twitter-post">
+                                    <i class="ion ion-social-twitter"></i>
+                                    <p>
+                                        <a href="#" title="">@Dewwatertheme</a>
+                                        We are the most proud on the #health care NGO, who is working day and night for saving the childes of #africa
+                                        #Dewwater <a href="#" title="">Dewwater.com/healthcare</a> 
+                                    </p>
+                                </div>
+                    </div>
+
+                  </aside>
+                </div>
+                <div class="col-sm-12 col-md-9">
+                  <div id="#page1" class="our-cause active">
+                    <div class="blog-listing clearfix animate__animated animate__fadeInUp animate__delay-1s">
+                      <div class="avatar-listing">
+                        <a href="">
+                          <img src="./assets/images/resources/blog-listing-avatar-1.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="listing-meta">
+                        <ul class="post-date">
+                          <li>
+                            <span>at-</span>
+                            <a href="">12 january 2019</a>
+                          </li>
+                          <li>
+                            <span>by-</span>
+                            <a href="">lifeaid</a>
+                          </li>
+                        </ul>
+
+                        <h2>
+                          <a href="">LifeAid has amazing Features</a>
+                        </h2>
+                        <p>
+                          
+                          The spread of computers and layout programmes thus made dummy text better known. While in earlier times...
+                                            
+                        </p>
+                        <ul class="socials d-flex">
+                          <li><a href="#" title=""><i class="ion-social-facebook"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-twitter"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-googleplus"></i></a></li>
+                      </ul>
+                      <a href="" class="btn btn-continue custom_ripple">continue</a>
+                      </div>
+                    </div>
+                    <div class="blog-listing clearfix animate__animated animate__fadeInUp animate__delay-1s">
+                      <div class="avatar-listing">
+                        <a href="">
+                          <img src="./assets/images/resources/blog-listing-avatar-2.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="listing-meta">
+                        <ul class="post-date">
+                          <li>
+                            <span>at-</span>
+                            <a href="">12 january 2019</a>
+                          </li>
+                          <li>
+                            <span>by-</span>
+                            <a href="">lifeaid</a>
+                          </li>
+                        </ul>
+
+                        <h2>
+                          <a href="">LifeAid has amazing Features</a>
+                        </h2>
+                        <p>
+                          
+                          The spread of computers and layout programmes thus made dummy text better known. While in earlier times...
+                                            
+                        </p>
+                        <ul class="socials d-flex">
+                          <li><a href="#" title=""><i class="ion-social-facebook"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-twitter"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-googleplus"></i></a></li>
+                      </ul>
+                      <a href="" class="btn btn-continue custom_ripple">continue</a>
+                      </div>
+                    </div>
+                    <div class="blog-listing clearfix animate__animated animate__fadeInUp animate__delay-1s">
+                      <div class="avatar-listing">
+                        <a href="">
+                          <img src="./assets/images/resources/blog-listing-avatar-3.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="listing-meta">
+                        <ul class="post-date">
+                          <li>
+                            <span>at-</span>
+                            <a href="">12 january 2019</a>
+                          </li>
+                          <li>
+                            <span>by-</span>
+                            <a href="">lifeaid</a>
+                          </li>
+                        </ul>
+
+                        <h2>
+                          <a href="">LifeAid has amazing Features</a>
+                        </h2>
+                        <p>
+                          
+                          The spread of computers and layout programmes thus made dummy text better known. While in earlier times...
+                                            
+                        </p>
+                        <ul class="socials d-flex">
+                          <li><a href="#" title=""><i class="ion-social-facebook"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-twitter"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-googleplus"></i></a></li>
+                      </ul>
+                      <a href="" class="btn btn-continue custom_ripple">continue</a>
+                      </div>
+                    </div>
+                    <div class="blog-listing clearfix animate__animated animate__fadeInUp animate__delay-1s">
+                      <div class="avatar-listing">
+                        <a href="">
+                          <img src="./assets/images/resources/blog-listing-avatar-4.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="listing-meta">
+                        <ul class="post-date">
+                          <li>
+                            <span>at-</span>
+                            <a href="">12 january 2019</a>
+                          </li>
+                          <li>
+                            <span>by-</span>
+                            <a href="">lifeaid</a>
+                          </li>
+                        </ul>
+
+                        <h2>
+                          <a href="">LifeAid has amazing Features</a>
+                        </h2>
+                        <p>
+                          
+                          The spread of computers and layout programmes thus made dummy text better known. While in earlier times...
+                                            
+                        </p>
+                        <ul class="socials d-flex">
+                          <li><a href="#" title=""><i class="ion-social-facebook"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-twitter"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-googleplus"></i></a></li>
+                      </ul>
+                      <a href="" class="btn btn-continue custom_ripple">continue</a>
+                      </div>
+                    </div>
+                    <div class="blog-listing clearfix animate__animated animate__fadeInUp animate__delay-1s">
+                      <div class="avatar-listing">
+                        <a href="">
+                          <img src="./assets/images/resources/blog-listing-avatar-5.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="listing-meta">
+                        <ul class="post-date">
+                          <li>
+                            <span>at-</span>
+                            <a href="">12 january 2019</a>
+                          </li>
+                          <li>
+                            <span>by-</span>
+                            <a href="">lifeaid</a>
+                          </li>
+                        </ul>
+
+                        <h2>
+                          <a href="">LifeAid has amazing Features</a>
+                        </h2>
+                        <p>
+                          
+                          The spread of computers and layout programmes thus made dummy text better known. While in earlier times...
+                                            
+                        </p>
+                        <ul class="socials d-flex">
+                          <li><a href="#" title=""><i class="ion-social-facebook"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-twitter"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-googleplus"></i></a></li>
+                      </ul>
+                      <a href="" class="btn btn-continue custom_ripple">continue</a>
+                      </div>
+                    </div>
+                    <div class="blog-listing clearfix animate__animated animate__fadeInUp animate__delay-1s">
+                      <div class="avatar-listing">
+                        <a href="">
+                          <img src="./assets/images/resources/blog-listing-avatar-1.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="listing-meta">
+                        <ul class="post-date">
+                          <li>
+                            <span>at-</span>
+                            <a href="">12 january 2019</a>
+                          </li>
+                          <li>
+                            <span>by-</span>
+                            <a href="">lifeaid</a>
+                          </li>
+                        </ul>
+
+                        <h2>
+                          <a href="">LifeAid has amazing Features</a>
+                        </h2>
+                        <p>
+                          
+                          The spread of computers and layout programmes thus made dummy text better known. While in earlier times...
+                                            
+                        </p>
+                        <ul class="socials d-flex">
+                          <li><a href="#" title=""><i class="ion-social-facebook"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-twitter"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-googleplus"></i></a></li>
+                      </ul>
+                      <a href="" class="btn btn-continue custom_ripple">continue</a>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div id="#page2" class="our-cause">
+                    <div class="blog-listing clearfix animate__animated animate__fadeInUp animate__delay-1s">
+                      <div class="avatar-listing">
+                        <a href="">
+                          <img src="./assets/images/resources/blog-listing-avatar-3.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="listing-meta">
+                        <ul class="post-date">
+                          <li>
+                            <span>at-</span>
+                            <a href="">12 january 2019</a>
+                          </li>
+                          <li>
+                            <span>by-</span>
+                            <a href="">lifeaid</a>
+                          </li>
+                        </ul>
+
+                        <h2>
+                          <a href="">LifeAid has amazing Features</a>
+                        </h2>
+                        <p>
+                          
+                          The spread of computers and layout programmes thus made dummy text better known. While in earlier times...
+                                            
+                        </p>
+                        <ul class="socials d-flex">
+                          <li><a href="#" title=""><i class="ion-social-facebook"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-twitter"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-googleplus"></i></a></li>
+                      </ul>
+                      <a href="" class="btn btn-continue custom_ripple">continue</a>
+                      </div>
+                    </div>
+                    <div class="blog-listing clearfix animate__animated animate__fadeInUp animate__delay-1s">
+                      <div class="avatar-listing">
+                        <a href="">
+                          <img src="./assets/images/resources/blog-listing-avatar-4.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="listing-meta">
+                        <ul class="post-date">
+                          <li>
+                            <span>at-</span>
+                            <a href="">12 january 2019</a>
+                          </li>
+                          <li>
+                            <span>by-</span>
+                            <a href="">lifeaid</a>
+                          </li>
+                        </ul>
+
+                        <h2>
+                          <a href="">LifeAid has amazing Features</a>
+                        </h2>
+                        <p>
+                          
+                          The spread of computers and layout programmes thus made dummy text better known. While in earlier times...
+                                            
+                        </p>
+                        <ul class="socials d-flex">
+                          <li><a href="#" title=""><i class="ion-social-facebook"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-twitter"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-googleplus"></i></a></li>
+                      </ul>
+                      <a href="" class="btn btn-continue custom_ripple">continue</a>
+                      </div>
+                    </div>
+                    <div class="blog-listing clearfix animate__animated animate__fadeInUp animate__delay-1s">
+                      <div class="avatar-listing">
+                        <a href="">
+                          <img src="./assets/images/resources/blog-listing-avatar-2.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="listing-meta">
+                        <ul class="post-date">
+                          <li>
+                            <span>at-</span>
+                            <a href="">12 january 2019</a>
+                          </li>
+                          <li>
+                            <span>by-</span>
+                            <a href="">lifeaid</a>
+                          </li>
+                        </ul>
+
+                        <h2>
+                          <a href="">LifeAid has amazing Features</a>
+                        </h2>
+                        <p>
+                          
+                          The spread of computers and layout programmes thus made dummy text better known. While in earlier times...
+                                            
+                        </p>
+                        <ul class="socials d-flex">
+                          <li><a href="#" title=""><i class="ion-social-facebook"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-twitter"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-googleplus"></i></a></li>
+                      </ul>
+                      <a href="" class="btn btn-continue custom_ripple">continue</a>
+                      </div>
+                    </div>
+                    <div class="blog-listing clearfix animate__animated animate__fadeInUp animate__delay-1s">
+                      <div class="avatar-listing">
+                        <a href="">
+                          <img src="./assets/images/resources/blog-listing-avatar-1.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="listing-meta">
+                        <ul class="post-date">
+                          <li>
+                            <span>at-</span>
+                            <a href="">12 january 2019</a>
+                          </li>
+                          <li>
+                            <span>by-</span>
+                            <a href="">lifeaid</a>
+                          </li>
+                        </ul>
+
+                        <h2>
+                          <a href="">LifeAid has amazing Features</a>
+                        </h2>
+                        <p>
+                          
+                          The spread of computers and layout programmes thus made dummy text better known. While in earlier times...
+                                            
+                        </p>
+                        <ul class="socials d-flex">
+                          <li><a href="#" title=""><i class="ion-social-facebook"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-twitter"></i></a></li>
+                          <li><a href="#" title=""><i class="ion-social-googleplus"></i></a></li>
+                      </ul>
+                      <a href="" class="btn btn-continue custom_ripple">continue</a>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                  <nav aria-label="...">
+                    <ul class="pagination">
+                      <li class="page-item pre-pagination">
+                        <a class="page-link" href="#" tabindex="-1">
+                          ← Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#page1">1</a></li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#page2">2 <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="page-item next-pagination">
+                        <a class="page-link" href="#">Next →</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </section>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="widget">
+              <div class="logo">
+                <h1>
+                  <a href="" title="">
+                  <img src="./assets/images/logo2.png" alt="">
+                </a>
+              </h1>
+            </div>
+            <ul class="address">
+              <li>
+                <i class="ion-ios-telephone"></i>
+                001 442 23523, 5356445
+              </li>
+              <li>
+                <i class="ion-ios-email"></i>
+                myself@gmail.com
+              </li>
+          </ul>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <h4 class="widget-title">Successful Stories</h4>
+            <ul class="success-stories">
+              <li>
+                <a href="#" title="">Nibh Sem Sit Ullamcorper</a>
+                <span>
+                  <i>$50,000</i>
+                  Money Spent
+                </span>
+              </li>
+              <li>
+                <a href="#" title="">Nibh Sem Sit Ullamcorper</a>
+                <span>
+                  <i>$50,000</i>
+                  Money Spent
+                </span>
+              </li>
+          </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <h4 class="widget-title">Flickr Feeds</h4>
+            <ul class="flickr-gallery">
+              <li>
+                <a href="#" title="">
+                  <img src="./assets/images/resources/filcker-widget-1.jpg" alt="">
+                </a>
+              </li>
+              <li><a href="#" title=""><img src="./assets/images/resources/filcker-widget-2.jpg" alt=""></a></li>
+              <li><a href="#" title=""><img src="./assets/images/resources/filcker-widget-3.jpg" alt=""></a></li>
+              <li><a href="#" title=""><img src="./assets/images/resources/filcker-widget-4.jpg" alt=""></a></li>
+              <li><a href="#" title=""><img src="./assets/images/resources/filcker-widget-5.jpg" alt=""></a></li>
+              <li><a href="#" title=""><img src="./assets/images/resources/filcker-widget-6.jpg" alt=""></a></li>
+          </ul>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <h4 class="widget-title">our branches</h4>
+            <div class="footer-map">
+              <img src="./assets/images/footer-map.png" alt="">
+              <div class="pointer" style="left:15%; top:10%;"> <span></span>
+                  <div class="address-tooltip">
+                      <ul>
+                          <li><i class="ion-ios-home"></i>Address : New street 44 block, CA</li>
+                          <li><i class="ion-ios-telephone"></i>Phone : +99 (125) 5579</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="pointer" style="left:55%; top:20%;"> <span></span>
+                  <div class="address-tooltip">
+                      <ul>
+                          <li><i class="ion-ios-home"></i>Address : New street 44 block, CA</li>
+                          <li><i class="ion-ios-telephone"></i>Phone : +99 (125) 5579</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="pointer" style="left:20%; top:60%;"> <span></span>
+                  <div class="address-tooltip">
+                      <ul>
+                          <li><i class="ion-ios-home"></i>Address : New street 44 block, CA</li>
+                          <li><i class="ion-ios-telephone"></i>Phone : +99 (125) 5579</li>
+                      </ul>	
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="bottom-bar-section">
+      <div class="bottombar">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="copyright">
+                <span>© 2019 Dewwater. All Rights Reserved.</span>
+                <ul class="useful-links">
+                    <li><a href="" title="">Events</a></li>
+                    <li><a href="" title="">Our Causes</a></li>
+                    <li><a class="volunteer-btn" href="#" title="">be a volunteer</a></li>
+                </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="topcontrol">
+      <i class="ion-chevron-up"></i>
+    </div>
+
+    <!-- ==============embeded js -->
+    <script src="./assets/js/vendor.js"></script>
+
+    <script src="./assets/inc/ripple/ripple.js"></script>
+    <script src="./assets/inc/slick/slick.min.js"></script>
+    <script src="./assets/inc/slick/slick_custom/slick_custom.js"></script>
+    <script src="./assets/inc/owlcarousel/js/owl.carousel.min.js"></script>
+
+    <script src="./assets/inc/owlcarousel/custom_owlcarousel/custom_owlcarosel.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+body{
+    background: linen;
+  }
+  /* button{
+    font-family: 'Roboto', sans-serif;
+    background:salmon;
+    border:none;
+    width:260px;
+    padding:1rem;
+    color:#fff;
+    font-size:1.5rem;
+    position:absolute !Important;
+    outline:none;
+    left:calc(50% - 130px);
+    top:calc(50% - 4rem);
+    border-radius:4px;
+    box-shadow:2px 2px 10px rgba(0,0,0,.3);
+  } */
+  .custom_ripple{
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+    float:left;
+  }
+  .ripple_wave{
+    background: rgba(210, 232, 231, 0.3);
+    height:10px;
+    width: 10px;
+    border-radius:100%;
+    animation: ripple 1.5s 1 forwards;
+    position:absolute;
+    top:50%;
+    left:50%;
+  }
+  
+  @keyframes ripple{
+    0%{
+      transform:scale(0);
+      opacity:1;
+    }
+    100%{
+      transform:scale(70);
+      opacity:0;
+    }
+  }
+  

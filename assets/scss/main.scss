@@ -1,0 +1,14 @@
+
+@import 'reset';
+@import 'fonts';
+@import 'mixins';
+@import 'variables';
+@import 'bootstrap/bootstrap';
+@import 'general';
+
+@import './content/header';
+@import './content/footer';
+@import './content/body';
+
+
+// sass ./assets/scss/main.scss ./assets/scss/css/main.css --watch
